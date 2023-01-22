@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <srction>
+        <Button onclick="getAll()">Get All Post</Button>
+        <div id="post-container" style="display: flex;"></div>
+    </srction>
+
+    <srction>
+        <form id="deleteForm" action="" name="" style="border: 1px solid gray;">
+            <div style="display: flex; flex-direction: column; padding: 15px">
+                <h3>Delete Post</h3>
+                <label for="">Post ID</label>
+                <input name="id" />
+            </div>
+    
+            <div style="padding: 15px; display: flex; flex-direction: column;">
+                <p>Author info</p>
+    
+                <label for="">Username</label>
+                <input name="username" />
+    
+                <label for="">Password</label>
+                <input name="password" />
+    
+            </div>
+    
+            <div style="padding: 15px;">
+                <button type="submit">Delete</button>
+            </div>
+    
+        </form>
+    </srction>
+
+    <form id="createForm" action="" name="" style="border: 1px solid gray;">
+        <div style="display: flex; flex-direction: column; padding: 15px">
+            <h3>Create Post</h3>
+            <label for="">title</label>
+            <input name="title" />
+            <label for="">Description</label>
+            <textarea name="description" rows="10" cols="20"></textarea>
+        </div>
+
+        <div style="padding: 15px; display: flex; flex-direction: column;">
+            <p>Author info</p>
+
+            <label for="">Username</label>
+            <input name="username" />
+
+            <label for="">Password</label>
+            <input name="password" />
+
+        </div>
+
+        <div style="padding: 15px;">
+            <button type="submit">Create</button>
+        </div>
+
+    </form>
+
+    <form id="register" action="" name="" style="border: 1px solid gray;">
+        <div style="display: flex; flex-direction: column; padding: 15px; width: 400px;">
+            <h3>Register as author</h3>
+            <label for="">username</label>
+            <input name="username" />
+
+            <label for="">Email</label>
+            <input name="email" />
+
+            <label for="">Password</label>
+            <input name="password" />
+
+
+        </div>
+
+        <div style="padding: 15px">
+            <button type="submit">Register</button>
+        </div>
+    </form>
+
+    <script src="./index.js"></script>
+</body>
+</html>
